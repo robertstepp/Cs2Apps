@@ -59,7 +59,10 @@ namespace EmployeeDB
 
         public void setMSalary(decimal salary)
         {
-            monthlySalary = salary;
+            if (salary >= 0)
+            {
+                monthlySalary = salary;
+            }
         }
     }
 }
