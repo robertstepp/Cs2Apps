@@ -20,6 +20,7 @@ namespace GuessTheNumber
     {
         static void Main(string[] args)
         {
+            Number num = new Number();
         }
     }
 }
