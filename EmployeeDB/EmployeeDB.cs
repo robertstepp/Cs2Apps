@@ -1,14 +1,15 @@
-﻿// Robert Stepp
+﻿7// Robert Stepp
 // TINFO 200
 // Cs2Apps / EmployeeDB
 ///////////////////////////////
 // Change History
 // Date     Developer   Description
-// 01202020  rstepp     File creation and initial implementation of the application
+// 01202020 rstepp      File creation and initial implementation of the application
+// 02012020 rstepp      Added comments to files.     
 //
 // References Used
+// None
 
-// TODO Add comments
 
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace EmployeeDB
 {
     class EmployeeDB
     {
+
+        // Main program for the Employee Program
+        // Builds an employee and displays data from it. 
+        // Modifies salary and returns new value.
+
         private static decimal Raise(decimal salary)
         {
             decimal newSalary = salary * 1.1m;
