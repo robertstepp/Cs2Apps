@@ -47,11 +47,21 @@ namespace BarChart
 
         static void Main(string[] args)
         {
+
+            Console.WriteLine(@"
+***************************
+*******  Bar Chart  *******
+***************************
+
+The bar chart is as follows:
+
+");
             for (int i = 0; i < 3; i++)
             {
                 GraphDisplay(RandomNumber(30));
                 Console.WriteLine();
             }
+            Console.WriteLine();
         }
     }
 }

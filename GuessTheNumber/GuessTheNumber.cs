@@ -35,6 +35,7 @@ namespace GuessTheNumber
         private static void guessNumber()
         {
             int guess;
+
             Console.WriteLine($"Please enter a guess between 1 and 1000: ");
             int.TryParse(Console.ReadLine(), out guess);
             if (guess < num.getNumber()) // Too low
@@ -77,6 +78,16 @@ Please answer y or n.
 
         static void Main(string[] args)
         {
+            Console.WriteLine(@"
+**********************************************************************************
+*******************************  Guess the Number  *******************************
+**********************************************************************************
+
+Thanks for choosing to guess numbers for me. Today our spectrum is from 1 to 1000.
+There will be feedback if your guess is higher or lower than the number. I will be 
+counting you wins from each game. 
+
+");
             guessNumber();
         }
     }
